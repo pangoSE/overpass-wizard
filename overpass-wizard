@@ -8,7 +8,7 @@ var argv = require('yargs')
         .string('bbox').alias('b', 'bbox').describe('bbox','string to replace {{bbox}} shortcuts with')
         .string('around-radius').describe('around-radius','radius to use for "around <location>" queries')
 
-        .string('timeout').alias('t', 'timeout').default('timeout', 25).describe('timeout','timeout of overpass query in seconds')
+        .string('timeout').alias('t', 'timeout').default('timeout', 250).describe('timeout','timeout of overpass query in seconds')
         .string('maxsize').describe('maxsize','memory limit of overpass query (in bytes)')
         .string('output-format').alias('f', 'output-format').default('output-format', 'json').describe('output-format','set the output format to json or xml')
         .string('output-mode').alias('m', 'output-mode').default('output-mode', 'geom').describe('output-mode','specify the output mode (either "recursive" or any valid value of the Overpass out statement)')
